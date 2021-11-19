@@ -15,6 +15,8 @@ df = pd.DataFrame(
    columns=('col %d' % i for i in range(20)))
 
 st.dataframe(df)  # Same as st.write(df)
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 """
 
 import pandas as pd
@@ -23,4 +25,4 @@ df = pd.DataFrame({
   'second column': [10, 20, 30, 40]
 })
 
-df
+st.dataframe(df)
