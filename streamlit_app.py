@@ -19,11 +19,8 @@ st.dataframe(df)  # Same as st.write(df)
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 """
 
-df = pd.DataFrame({
-  'first column': [1, 2, 3, 4],
-  'second column': [10, 20, 30, 40]
-})
+url = 'https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv'
+df = pd.read_csv(url, index_col=0)
+print(df.head(5))
 
 df
-
-st.dataframe(df)
